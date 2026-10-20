@@ -466,59 +466,12 @@ strong img {
 	vertical-align: middle;
 }
 
-#zapraszam {
-	font-size: 1em;
-	text-align: center;
-	font-weight: 600;
-	line-height: 1.75em;
-	background: none;
-	padding-bottom: 1em;
-}
-
 #kontakt {
 	height: 80vh;
 }
 
-.skontaktuj {
-	background: none;
-	border: none;
-    font-size: 1.25em;
-	font-weight: 100;
-	font-style: normal;
-    letter-spacing: 0.1em;
-	color: rgb(38,38,38);
-	transition: all 0.3s;
-	-webkit-transition: all 0.3s;
-	border-radius: 2em;
-}
-
-address ul {
-    margin: 0 auto;
-    list-style: none;
-	padding: 0;
-	padding-top: 3em;
-}
-
-address ul svg {
-	fill: rgb(38,38,38);
-    width: 2em;
-    height: auto;
-    margin-right: 0.75em;
-    vertical-align: middle;
-}
-
 #telefon {
 	padding-bottom: 1em;
-}
-
-.skontaktuj:hover {
-	scale: 105%;
-	background: white;
-	cursor: pointer;
-}
-
-.skontaktuj:active {
-	scale: 95%;
 }
 
 .nowe-okno {
@@ -835,22 +788,6 @@ a {
 	position: relative;
 }
 
-.logo-inside svg {
-	fill: blue;
-	position: absolute;
-	top: 0;
-	left: 0;
-	z-index: 10000000;
-}
-
-.znacznik svg {
-	fill: red;
-	position: absolute;
-	bottom: 0;
-	right: 0;
-	z-index: 10000000;
-}
-
 #slider {
 	width: 100vh;
 	height: auto;
@@ -979,59 +916,6 @@ a {
 	display: none;
 }
 
-.guziki {
-	background: white;
-	border: none;
-    color: rgba(38, 38, 38, 0.5);
-	font-weight: 100;
-    padding: 0.75em 1em;
-	margin: 0 1em;
-    cursor: pointer;
-	transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
-	font-family: 'Inter', sans-serif;
-	font-size: 1.2em;
-	font-weight: 100;
-	line-height: 1.25em;
-}
-
-#nagl-popup {
-	width: 95%;
-	padding: 0.75em;
-	border-bottom: 1px solid rgb(38,38,38);
-}
-
-h5 {
-	font-family: 'Inter', sans-serif;
-	color:rgb(38, 38, 38);
-	font-size: 1.25em;
-	font-weight: 100;
-	line-height: 1.25em;
-	padding: 4em 0;
-}
-
-.guziki svg {
-	fill: rgba(38, 38, 38, 0.5);
-	width: 1.5em;
-	height: 1.5em;
-	vertical-align: middle;
-	margin: 0;
-	padding: 0;
-	transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
-}
-
-.guziki:hover {
-	scale: 125%;
-    color: rgb(38, 38, 38);
-}
-
-.guziki:hover svg {
-	fill: rgb(38,38,38);
-}
-
-.guziki:active {
-	scale: 95%;
-}
-
 html {
 	font-family: 'Inter', sans-serif;
 	font-weight: 100;
@@ -1052,8 +936,7 @@ html {
 		max-height: none;
 		margin: 0;
 	}
-	.naglowek-glowny > h1,
-	#nagl-popup h1 {
+	.naglowek-glowny > h1 {
 		font-size: clamp(1.7em, 3vw, 2.3em);
 		text-align: center;
 	}
@@ -1066,9 +949,6 @@ html {
 	}
 	.programy {grid-template-columns: repeat(4, minmax(0, 1fr))}
 	.tooltip section {font-size: 0.9em}
-	h5 {font-size: 1.1em}
-	.guziki {margin: 0 0.5em; font-size: 1em}
-	.popup-window {width: min(80%, 720px); box-sizing: border-box}
 	.text {font-size: 0.8em}
 	.gallery {z-index: 10}
 	.gallery-tlo {
