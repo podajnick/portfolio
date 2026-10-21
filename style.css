@@ -923,8 +923,11 @@ html {
 }
 
 @media screen and (max-width: 1000px) {
+	body {font-size: 50%}
+	svg {font-size: 200%; zoom: 0.5}
 	html,
 	body {overflow-x: hidden}
+	html {background-size: auto 100vh; background: white}
 	section.siatka {
 		width: min(88%, 900px);
 		grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -937,19 +940,19 @@ html {
 		margin: 0;
 	}
 	.naglowek-glowny > h1 {
-		font-size: clamp(1.7em, 3vw, 2.3em);
+		font-size: clamp(1.7em, 1.5vw, 2.3em);
 		text-align: center;
 	}
 	.nav-item {font-size: 0.9em; margin: 0 0.45em}
 	.naglowek-glowny {width: 94%}
 	.elementy {width: 82%}
-	.opisuwa {font-size: 1.05em; line-height: 1.6em}
+	
 	.opisuwa img {
 		display: none;
 	}
 	.programy {grid-template-columns: repeat(4, minmax(0, 1fr))}
 	.tooltip section {font-size: 0.9em}
-	.text {font-size: 0.8em}
+	.text {font-size: 0.6em}
 	.gallery {z-index: 10}
 	.gallery-tlo {
 		width: min(94%, 1100px);
@@ -977,11 +980,14 @@ html {
 		object-fit: contain;
 	}
 	.naglowekProj {align-items: center; gap: 0.25em}
-	.naglowekProj h1 {font-size: clamp(1.1em, 2.8vw, 1.8em)}
+	.naglowekProj h1 {font-size: clamp(1.1em, 1.5vw, 1.8em)}
 	.naglowekProj .animated-button {padding: 0 1em}
 	.okno-projekt {width: min(96%, 1200px); margin: 4.5em auto 1em}
-	.animated-button svg {display: block}
-	.informejszyn svg {width: 1.5em; height: 1.5em}
+	.animated-button svg {display: block; height: 1.5em}
+	.informejszyn svg {width: 1em; height: auto}
+	strong {display: none}
+	.nav-inside svg {fill: rgba(38,38,38,0.9)}
+	#fulskrin {display: none}
 
 	footer #telefon {
 		display: none;
