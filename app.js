@@ -40,16 +40,6 @@ function skopiujLinkTel() {
     });
 }
 
-function skopiujLinkMail() {
-    const copyText = document.querySelector("#mailKopiuj");
-
-    navigator.clipboard.writeText(copyText.value).then(() => {
-        alert("Skopiowano adres mailowy: " + copyText.value);
-    }).catch(err => {
-        /* Obsłuż błędy, jeśli API nie jest dostępne (np. w starszych przeglądarkach) */
-        console.error('Nie udało się skopiować tekstu: ', err);
-    });
-}
 
 document.addEventListener('DOMContentLoaded', function() {
   const navItems = document.querySelectorAll('.nav-links a');
