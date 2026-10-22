@@ -106,7 +106,6 @@ h4 span {
 
 footer {
 	position: fixed;
-    display: flex;
 	flex-wrap: wrap;
 	bottom: 0;
 	left: 0;
@@ -119,6 +118,13 @@ footer {
 	background-color: white;
 	border-top: 1px solid rgb(38,38,38);
 	}
+
+address {
+    display: flex;
+	width: 38%;
+	margin: 0 auto;
+	padding: 0;
+}
 
 h6 {
 	flex: 0 0 100%;
@@ -979,6 +985,14 @@ html {
 		max-height: calc(100vh - 13rem);
 		object-fit: contain;
 	}
+
+	h1 {font-size: clamp(1.5em, 2vw, 2.5em)}
+
+	.prog-schem-img {
+	height: 3.5em;
+	width: auto;
+	}
+
 	.naglowekProj {align-items: center; gap: 0.25em}
 	.naglowekProj h1 {font-size: clamp(1.1em, 1.5vw, 1.8em)}
 	.naglowekProj .animated-button {padding: 0 1em}
